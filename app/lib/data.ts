@@ -1,3 +1,4 @@
+// The place where we load all the data
 import { sql } from '@vercel/postgres';
 import {
   CustomerField,
@@ -64,6 +65,7 @@ export async function fetchCardData() {
          SUM(CASE WHEN status = 'pending' THEN amount ELSE 0 END) AS "pending"
          FROM invoices`;
 
+    //The Promise.all() runs all of the queries in parallel
     const data = await Promise.all([
       invoiceCountPromise,
       customerCountPromise,
