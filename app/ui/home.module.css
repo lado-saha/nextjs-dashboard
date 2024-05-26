@@ -2,7 +2,7 @@
 /* CSS modules are alternative to tailwind */
 
 /* This creates a triangle shape */
-.shape{
+.shape {
   height: 0;
   width: 0;
   border-bottom: 30px solid black;

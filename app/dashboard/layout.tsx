@@ -3,7 +3,7 @@ import SideNav from '@/app/ui/dashboard/sidenav';
 /**
  * Any thing added here will be shared across all children of the dashboard
  * Here, we will create a SideBar
- * 
+ *
  * The children prop can either be a another Page or Layout
  */
 export default function Layout({ children }: { children: React.ReactNode }) {
